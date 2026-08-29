@@ -1,0 +1,48 @@
+// start gallery-page
+.gallery-page {
+    padding: 110px 0;
+}
+
+.gallery-page__images {
+    margin-bottom: 40px;
+}
+
+.gallery-page__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-grey;
+    width: 295px;
+    text-align: center;
+}
+
+.gallery-page__items {
+    text-align: center;
+    max-width: 0 auto;
+    .slick-btn {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .slick-prev {
+        left: -90px;
+        z-index: 5;
+        top: 285px;
+    }
+    .slick-next {
+        right: 4px;
+        z-index: 5;
+        top: 285px;
+    }
+    .slick-btn slick-next .slick-arrow:hover{
+       color: red;
+    }
+
+}
+
+
+
+
+// end gallery-page

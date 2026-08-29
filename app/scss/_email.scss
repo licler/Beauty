@@ -1,0 +1,75 @@
+// start email-page
+.email-page {
+    padding: 80px 0 100px;
+    background-color: #f3f5f5;
+}
+.email-page__wrapper {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 45px;
+    .email-page__title {
+        font-size: 36px;
+        color: $color-grey;
+        font-family: 'Raleway-Bold';
+    }
+    .icon-envelope-o::before {
+        font-size: 36px; 
+        color: $color-grey;
+        margin-right: 30px;
+        position: absolute;
+        top: 0px;
+        left: 260px;
+    }
+}
+.email-form {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    input {
+        width: 100%;
+        border-radius: 27px;
+        border: 2px solid #bbc3c2;
+        outline: none;
+        padding: 20px 180px 20px 30px;
+        &::placeholder {
+            font-size: 14px;
+            line-height: 24px;
+            color: $color-grey;
+        }
+        &:focus {
+            border:2px solid $lightgreen;
+        }
+    }
+    button {
+        width: 170px;
+        border-radius: 27px;
+        padding: 20px;
+        text-align: center;
+        color: $white;
+        border:none;
+        outline: none;
+        background-color: $lightgreen;
+        font-size: 20px;
+        line-height: 24px;
+        font-family: 'Raleway-Bold';
+        text-transform: uppercase;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #fff;
+        transition: all .5s;
+        color: #5dca88;
+        border: 2px solid #bbc3c2;
+        padding: 18px;
+    }
+}
+
+
+
+
+// end email-page

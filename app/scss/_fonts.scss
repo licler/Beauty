@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Raleway-Bold';
+    src : url('../fonts/Raleway-Bold.woff2') format('woff2'),
+          url('../fonts/Raleway-Bold.woff') format('woff');
+          font-weight: 700;
+          font-display: swap;
+          
+}
+@font-face {
+    font-family: 'Raleway-Italic';
+    src : url('../fonts/Raleway-Italic.woff2') format('woff2'),
+          url('../fonts/Raleway-Italic.woff') format('woff');
+          font-weight: 300;
+          font-display: swap;
+          
+}
+@font-face {
+    font-family: 'Raleway-Light';
+    src : url('../fonts/Raleway-Light.woff2') format('woff2'),
+          url('../fonts/Raleway-Light.woff') format('woff');
+          font-weight: 300;
+          font-display: swap;
+          
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src : url('../fonts/Raleway-Regular.woff2') format('woff2'),
+          url('../fonts/Raleway-Regular.woff') format('woff');
+          font-weight: 400;
+          font-display: swap;
+          
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tn2c0s');
+    src:  url('../fonts/icomoon.eot?tn2c0s#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tn2c0s') format('truetype'),
+      url('../fonts/icomoon.woff?tn2c0s') format('woff'),
+      url('../fonts/icomoon.svg?tn2c0s#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak-as: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-twitter:before {
+    content: "\e900";
+  }
+  .icon-social:before {
+    content: "\e900";
+  }
+  .icon-google:before {
+    content: "\e901";
+  }
+  .icon-facebook:before {
+    content: "\e902";
+  }
+  .icon-facebook-f:before {
+    content: "\e902";
+  }
+  .icon-mobile:before {
+    content: "\e903";
+  }
+  .icon-mobile-phone:before {
+    content: "\e903";
+  }
+  .icon-umbrella:before {
+    content: "\e904";
+  }
+  .icon-leaf:before {
+    content: "\e905";
+  }
+  .icon-briefcase:before {
+    content: "\e906";
+  }
+  .icon-envelope-o:before {
+    content: "\e907";
+  }
+  .icon-phone-square:before {
+    content: "\e908";
+  }  

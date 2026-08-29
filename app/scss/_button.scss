@@ -1,0 +1,50 @@
+// button
+.download-page__btn {
+    width: 242px;
+    border-radius: 25px;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 3px solid $blue;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    a {
+        color: $white;
+        font-size: 21px;
+        font-family: 'Raleway-Bold';
+    }
+
+}
+.download-page__btn:hover {
+    background-color: #fff;
+    transition: all .4s;
+}
+
+.download-page__btn:hover a {
+    color: #5dca88;
+    transition: all .4s;
+}
+.about-page__btn {
+    width: 242px;
+    border-radius: 25px;
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 3px solid #aab2b5;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    a {
+        color: $brown;
+        font-size: 21px;
+        font-family: 'Raleway-Bold';
+    }
+}
+.about-page__btn:hover {
+    background-color: #296d63;
+    transition: all .4s linear;
+   
+}
+.about-page__btn:hover a {
+    color: #fff;
+    transition: all .4s linear;
+}

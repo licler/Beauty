@@ -1,0 +1,136 @@
+// start header
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 456;
+    background-color:#fff;
+    box-shadow: 4px 6px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.header__top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    align-items: center;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+    align-items: center;
+}
+
+.menu-list {
+    font-size: 14px;
+    color: $grey;
+    li {
+        display: inline-block;
+    }
+    li+li {
+        margin-left: 30px;
+    }
+}
+.menu-list li:hover{
+    background-color: #296d63;
+    padding: 20px;
+    color: #fff;
+    transition: all .4s cubic-bezier(0.29, 0.79, 1, 1);
+    
+}
+.menu-list li:hover a {
+    color: #fff;
+    transition: all .4s cubic-bezier(0.29, 0.79, 1, 1)
+}
+.menu-list__link--activ {
+    color: #105063;
+    letter-spacing: 3.4px;
+    font-weight: 700;
+}
+
+
+.header__logo {
+    margin-right: 30px;
+}
+
+.header__top-info {
+    display: flex;
+    font-size: 18px;
+
+    a+a {
+        margin-left: 35px;
+    }
+
+    .icon-phone-square:before {
+        margin-right: 10px;
+        font-size: 17px;
+    }
+
+    .icon-envelope-o:before {
+        margin-right: 10px;
+        font-size: 17px;
+        margin-left: 35px;
+    }
+
+    a {
+        font-family: 'Raleway-Regular';
+        font-size: 18px;
+    }
+}
+
+.download-page {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 730px;
+    padding: 120px 0 0;
+    position: relative;
+}
+
+.download-page__wrapper {
+    display: flex;
+  
+}
+.download-page__inner {
+    margin-top: 50px;
+}
+
+.download-page__images {
+    margin-left: -200px;
+    img{
+        position: absolute; 
+    }
+  
+}
+
+.download-page__title {
+    width: 450px;
+    color: $white;
+    font-size: 36px;
+    font-family: 'Raleway-Bold';
+    margin-bottom: 7px;
+    span {
+        font-family: 'Raleway-Light';
+        margin-bottom: 35px;
+    }
+}
+
+.download-page__desc {
+    font-size: 14px;
+    font-family: 'Raleway-Regular';
+    color: $blue;
+    max-width: 450px;
+    line-height: 24px;
+    margin-bottom: 45px;
+}
+
+
+
+.menu__big-btn,
+.header__top-btn {
+    display: none;
+}
+
+// end header

@@ -1,0 +1,64 @@
+// start clients-page
+.clients-page {
+    background-color: $white;
+    padding: 110px 0;
+}
+.clients-page__wrapper {
+    margin: 0 auto;
+    text-align: center;
+    .clients-page__title {
+        font-size: 36px;
+        color: $brown;
+        font-family: 'Raleway-Bold';
+        margin-bottom: 25px;
+    }
+    .clients-page__images {
+        margin-bottom: 30px;
+        .img {
+            border-radius: 50%;
+        }
+    }
+    .clients-page__desc {
+        font-size: 24px;
+        line-height: 24px;
+        color: $color-grey;
+        font-family: 'Raleway-Italic';
+        margin-bottom: 15px;
+    }
+    .clients-page__author {
+        color: $lightgreen;
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+.clients-page__slider {
+    .slick-dots {
+        text-align: center;
+        margin-top: 25px;
+    }
+    
+    .slick-dots li {
+        display: inline-block;
+        margin-right: 9px;
+        margin-left: 9px;
+    }
+    .slick-dots li button {
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        border: none;
+        background-color: $color-grey;
+        outline: none;
+        cursor: pointer;
+        font-size: 0;
+    }
+    .slick-dots li.slick-active button {
+        background-color: $lightgreen;
+    }
+           
+}
+
+
+
+
+// end clients-page
