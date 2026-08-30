@@ -9,7 +9,8 @@ const group_media = require('gulp-group-css-media-queries');
 const fileInclude = require('gulp-file-include');
 const uglify = require('gulp-uglify-es').default;
 const del = require('del');
-const ttf2woff = require('gulp-ttf2woff');
+// const ttf2woff = require('gulp-ttf2woff');
+const ttf2woff = require('gulp-ttf2woff2'); 
 const ttf2woff2 = require('gulp-ttf2woff2');
 const imagemin = require("gulp-imagemin");
 const webp = require('gulp-webp');
@@ -76,9 +77,9 @@ function scripts() {
 //Собираем все css файлы подключаемых плагинов, конкатинируем их в 1 минифицированный файл css и закидываем его в папку dist/css с именем libs.min.css///////////////////////////////////////////////////////////////////////////////////////////////////////
 function stylesLibs() {
 	return src([
-		'node_modules/normalize.css/normalize.css'
-		// 'node_modules/slick-carousel/slick/slick.css',
-		// 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css',
+		'node_modules/normalize.css/normalize.css',
+		'node_modules/slick-carousel/slick/slick.css',
+		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
 		// 'node_modules/animate.css/animate.css'
 	])
 	    // .pipe(sass())
@@ -94,12 +95,12 @@ function stylesLibs() {
 //Собираем все js файлы подключаемых плагинов, конкатинируем их в 1 минифицированный файл js и закидываем его в папку dist/js с именем libs.min.js///////////////////////////////////////////////////////////////////////////////////////////////////////
 function scriptsLibs() {
 	return src([
-		'node_modules/jquery/dist/jquery.js'
-		// 'node_modules/slick-carousel/slick/slick.js',
-		// 'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
+		'node_modules/jquery/dist/jquery.js',
+		'node_modules/slick-carousel/slick/slick.js',
+		'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'
 		// 'node_modules/wow.js/dist/wow.js'
 	])
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(concat('libs.min.js'))
 		.pipe(dest('dist/js/'))
 		.pipe(browsersync.stream())
@@ -108,12 +109,12 @@ function scriptsLibs() {
 
 //Следим за всеми файлами jpg, png, svg, gif, ico, webp в папке app/img, конвертируем их в формат webp со сжатием в 70% и закидываем их в папку dist/img. Так же Оригинальные файлы сжимаем до 3 уровня из доступных 7(можно в функции этот параметр поменять) и отправляем сжатые оригиналы в папку dist/img. Все удаленные файлы в папке app/img удалятся из нпапки dist/img при следующем запуске gulp.///////////////////////////////////////////////////////////////////////////////////////////////////////
 function images() {
-	return src('app/img/**/*.{jpg,png,svg,gif,ico,webp}')
+	return src('app/img/**/*.{jpg,png,svg,gif,ico,webp}', { encoding: false })
 		.pipe(webp({
 			quality: 70
 		}))
 		.pipe(dest('dist/img/'))
-		.pipe(src('app/img/**/*.{jpg,png,svg,gif,ico,webp}'))
+		.pipe(src('app/img/**/*.{jpg,png,svg,gif,ico,webp}', { encoding: false }))
 		.pipe(
 			imagemin({
 				progressive: true,
@@ -142,11 +143,19 @@ function clear() {
 //Конвертация и подключение шрифтов.///////////////////////////////////////////////////////////////////////////////////////////////////////
 function fonts() {
 	//Данная функция конвертирует шрифты ttf в woff и woff2, Ее необходимо один раз запустить перед запуском проекта, затем запустить функцию gulp fontsStyle, и только после этого запустить gulp. Повторно этого делать не нужно, только в случае, если добавились новые шрифты.
-	src('app/fonts/*.ttf')
+	src('app/fonts/*.ttf', { encoding: false })
 		.pipe(ttf2woff())
 		.pipe(dest('dist/fonts/'));
-	return src('app/fonts/*.ttf')
-		.pipe(ttf2woff2())
+	// return src('app/fonts/*.ttf')
+	// 	.pipe(ttf2woff2())
+	// 	.pipe(dest('dist/fonts/'));
+	return src([
+		'app/fonts/*.woff',
+		'app/fonts/*.woff2',
+		'app/fonts/*.eot',
+		'app/fonts/*.svg',
+		'app/fonts/*.ttf'
+	], { encoding: false })
 		.pipe(dest('dist/fonts/'));
 };
 

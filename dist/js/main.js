@@ -16,8 +16,8 @@ $(function () {
             slidesToShow: 3,
             slidesToScroll: 3,
             arrows: true,
-            prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/about/arrow-prewious.png" alt=""></button>',
-            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/about/arrow-next.png" alt=""></button>',
+            prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="img/arrow-prewious.png" alt=""></button>',
+            nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/arrow-next.png" alt=""></button>',
             autoplay: true,
             responsive: [
                 {
@@ -48,7 +48,7 @@ $(function () {
         autoplay: true,
         responsive: [
             {
-              breakpoint: 650,
+              breakpoint: 1000
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -112,10 +112,10 @@ $("[data-scroll]").on("click", function(event) {
 // ----------------------Бегущий текст-----------------------------------------
 // -----------------1. Создаем массив из переменной------------------------
 const t =[
-  'Perfect\n',
-  'app\n',
-  'landing\n',
-  'page\n',
+  'Массаж\n',
+  'лица\n',
+  'и\n',
+  'тела\n',
 ]
 // ------------------------------------------------------------------------------
 // 2. Создаем функцию обертку
