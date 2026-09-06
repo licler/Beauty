@@ -887,6 +887,89 @@ img {
   padding: 18px;
 }
 
+.contacts_page {
+  background-color: #f5f5f5;
+}
+
+.contacts_page-box {
+  color: #000;
+  padding-bottom: 65px;
+}
+
+.contacts_page-box input {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 320px;
+  height: 50px;
+  outline: 0;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.contacts_page-box textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 320px;
+  height: 80px;
+  resize: none;
+  margin-bottom: 20px;
+  display: block;
+  padding: 10px;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.contacts_page-item {
+  max-width: 100%;
+  background-color: #fff;
+  padding: 90px 70px;
+  left: 390px;
+  position: absolute;
+  width: 600px;
+  text-align: left;
+  color: #000;
+  top: -55px;
+}
+
+.contacts_page-item .contacts_page-name {
+  font-size: 30px;
+  font-family: MullerBold;
+  margin-bottom: 65px;
+}
+
+.contacts_page-item .contacts_page-desc {
+  font-size: 13px;
+  font-family: MullerLight;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.contacts_page-item .contacts_page-tel {
+  font-size: 17px;
+  font-family: MullerBold;
+}
+
+.contacts_page-item .contacts_page-email {
+  font-size: 17px;
+  font-family: MullerRegular;
+}
+
+.contacts_page-item .contacts_page-time {
+  width: 200px;
+  font-size: 17px;
+  font-family: MullerRegular;
+  line-height: 22px;
+}
+
+.contacts_page-item .contacts_page-text {
+  width: 275px;
+  font-size: 17px;
+  font-family: MullerRegular;
+  line-height: 22px;
+}
+
 @media (min-width: 991px) {
   .menu__list {
     display: block !important;

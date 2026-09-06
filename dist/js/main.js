@@ -48,7 +48,7 @@ $(function () {
         autoplay: true,
         responsive: [
             {
-              breakpoint: 1000
+              breakpoint: 1000,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
