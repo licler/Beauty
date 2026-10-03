@@ -83,11 +83,13 @@
 .contacts_page {
     background-color: #f5f5f5;
     height: 500px;
+    padding: 30px 0;
 }
 
 .contacts_page-wrapper {
     display: flex;
     position: relative;
+    justify-content: space-between;
 }
 
 .contacts_page-title {
@@ -137,9 +139,9 @@
 .contacts_page-item {
     max-width: 100%;
     background-color: #fff;
-    padding: 90px 70px;
-    left: 390px;
-    position: absolute;
+    padding: 20px 20px;
+    
+ 
     width: 600px;
     text-align: left;
     color: #000;
@@ -152,19 +154,19 @@
     }
 
     .contacts_page-desc {
-        font-size: 13px;
+        font-size: 25px;
         font-family: MullerLight;
         margin-bottom: 15px;
         margin-top: 25px;
     }
 
     .contacts_page-tel {
-        font-size: 17px;
+        font-size: 20px;
         font-family: MullerBold;
     }
 
     .contacts_page-email {
-        font-size: 17px;
+        font-size: 20px;
         font-family: MullerRegular;
     }
 
