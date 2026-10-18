@@ -21,22 +21,12 @@ $(function () {
             autoplay: true,
             responsive: [
                 {
-                  breakpoint: 500,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    arrows: false
-                  }
+                  breakpoint: 768, // например, для планшетов
+                  settings: { slidesToShow: 2, slidesToScroll: 1, infinite: true, arrows: false }
                 },
                 {
-                    breakpoint: 500,
-                    settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1,
-                      infinite: true,
-                      arrows: false
-                    }
+                  breakpoint: 500, // для мобильных
+                  settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, arrows: false }
                   }
             ]
         });
@@ -114,8 +104,6 @@ $("[data-scroll]").on("click", function(event) {
 const t =[
   'Арома\n',
   'массаж\n',
-  // 'и\n',
-  // 'тела\n',
 ]
 // ------------------------------------------------------------------------------
 // 2. Создаем функцию обертку
@@ -186,6 +174,27 @@ window.addEventListener('scroll', animOnScroll);
   }
   animOnScroll();
 }
+$('.gallery-page__item--video').on('click', function() {
+    const src = $(this).data('video-src');
+    const modal = $('#videoModal');
+    modal.find('.video-modal__player source').attr('src', src);
+    modal.find('.video-modal__player')[0].load();
+    modal.addClass('active');
+    $('body').addClass('_lock');
+});
+
+function closeVideoModal() {
+    const modal = $('#videoModal');
+    modal.removeClass('active');
+    modal.find('.video-modal__player')[0].pause();
+    modal.find('.video-modal__player')[0].currentTime = 0;
+    $('body').removeClass('_lock');
+}
+
+$('.video-modal__close, .video-modal__overlay').on('click', closeVideoModal);
+$(document).on('keydown', function(e) {
+    if (e.key === 'Escape') closeVideoModal();
+});
 // ---------------------------------------------------------------------------------------------------------------------
 });
  

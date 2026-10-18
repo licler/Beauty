@@ -106,7 +106,7 @@
 
     .tab_content {
         width: 800px;
-        padding-left: 20px;
+        padding-left: 35px;
 
         .tab-item {
             display: none;
@@ -122,14 +122,14 @@
             text-align: left;
         }
 
-        .icon-umbrella,
-        .icon-briefcase,
-        .icon-leaf,
-        .icon-mobile-phone {
-            color: $lightgreen;
-            font-size: 220px;
-            margin-bottom: 75px;
-        }
+        // .icon-umbrella,
+        // .icon-briefcase,
+        // .icon-leaf,
+        // .icon-mobile-phone {
+        //     color: $lightgreen;
+        //     font-size: 220px;
+        //     margin-bottom: 75px;
+        // }
 
         .tab-item__title {
             font-size: 24px;
