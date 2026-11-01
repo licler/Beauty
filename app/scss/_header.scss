@@ -2,93 +2,222 @@
 section[id] {
     scroll-margin-top: 110px; /* высота шапки */
 }
+// .header {
+//     width: 100%;
+//     top: 0;
+//     left: 0;
+//     position: fixed;
+//     z-index: 456;
+//     background-color: #fff;
+//     box-shadow: 4px 6px 8px 0px rgba(34, 60, 80, 0.2);
+// }
+
+// .header__top-wrapper {
+//     display: flex;
+//     justify-content: space-between;
+//     height: 110px;
+//     align-items: center;
+// }
+
+// .header__top-inner {
+//     display: flex;
+//     justify-content: space-between;
+//     height: 110px;
+//     align-items: center;
+// }
+
+// .menu-list {
+//     font-size: 18px;
+//     color: $grey;
+
+//     li {
+//         display: inline-block;
+//     }
+
+//     li+li {
+//         margin-left: 30px;
+//     }
+// }
+
+// .menu-list li:hover {
+//     // background-color: #296d63;
+//     // padding: 20px;
+//     color: #fff;
+//     transition: all .4s cubic-bezier(0.29, 0.79, 1, 1);
+
+// }
+
+// .menu-list li:hover a {
+//     color: #0c0c0c;
+//     transition: all .4s cubic-bezier(0.29, 0.79, 1, 1)
+// }
+
+// .menu-list__link--activ {
+//     color: #105063;
+//     letter-spacing: 3.4px;
+//     font-weight: 700;
+// }
+
+
+// .header__logo {
+//     margin-right: 30px;
+// }
+
+// .header__top-info {
+//     display: flex;
+//     font-size: 18px;
+   
+
+//     a+a {
+//         margin-left: 35px;
+//     }
+
+//     .icon-phone-square:before {
+//         margin-right: 10px;
+//         font-size: 17px;
+//     }
+
+//     .icon-envelope-o:before {
+//         margin-right: 10px;
+//         font-size: 17px;
+//         margin-left: 35px;
+//     }
+
+//     a {
+//         font-family: sans-serif;
+//         font-size: 18px;
+//         margin-left: 10px;
+//     }
+// }
+
+//Шапка
 .header {
-    width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
+    width: 100%;
     z-index: 456;
     background-color: #fff;
-    box-shadow: 4px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 2px 12px rgba(34, 60, 80, 0.08);
 }
 
 .header__top-wrapper {
     display: flex;
     justify-content: space-between;
-    height: 110px;
     align-items: center;
+    height: 90px;
+    gap: 30px;
 }
 
-.header__top-inner {
+// --- Логотип ---
+.header__logo {
+    font-family: 'Raleway-Bold';
+    font-size: 24px;
+    color: $brown;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: color 0.3s;
+
+    &:hover {
+        color: $lightgreen;
+    }
+}
+
+// --- Навигация ---
+.header__nav {
     display: flex;
-    justify-content: space-between;
-    height: 110px;
     align-items: center;
+    margin-left: auto;
 }
 
 .menu-list {
-    font-size: 18px;
-    color: $grey;
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
-    li {
-        display: inline-block;
+    &__link {
+        font-family: 'Raleway-Regular';
+        font-size: 16px;
+        color: $brown;
+        text-decoration: none;
+        position: relative;
+        padding: 5px 0;
+        transition: color 0.3s;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $lightgreen;
+            transition: width 0.3s;
+        }
+
+        &:hover {
+            color: $lightgreen;
+
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &--activ {
+            color: $lightgreen;
+
+            &::after {
+                width: 100%;
+            }
+        }
     }
-
-    li+li {
-        margin-left: 30px;
-    }
 }
 
-.menu-list li:hover {
-    // background-color: #296d63;
-    // padding: 20px;
-    color: #fff;
-    transition: all .4s cubic-bezier(0.29, 0.79, 1, 1);
-
-}
-
-.menu-list li:hover a {
-    color: #0c0c0c;
-    transition: all .4s cubic-bezier(0.29, 0.79, 1, 1)
-}
-
-.menu-list__link--activ {
-    color: #105063;
-    letter-spacing: 3.4px;
-    font-weight: 700;
-}
-
-
-.header__logo {
-    margin-right: 30px;
-}
-
+// --- Телефон и email ---
 .header__top-info {
     display: flex;
-    font-size: 18px;
-   
-
-    a+a {
-        margin-left: 35px;
-    }
-
-    .icon-phone-square:before {
-        margin-right: 10px;
-        font-size: 17px;
-    }
-
-    .icon-envelope-o:before {
-        margin-right: 10px;
-        font-size: 17px;
-        margin-left: 35px;
-    }
+    gap: 25px;
+    align-items: center;
+    flex-shrink: 0;
 
     a {
-        font-family: sans-serif;
-        font-size: 18px;
-        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: 'Raleway-Regular';
+        font-size: 15px;
+        color: $brown;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $lightgreen;
+        }
+
+        [class^="icon-"] {
+            font-size: 16px;
+            color: $lightgreen;
+        }
     }
 }
+
+// --- Бургер и кнопка телефона скрыты на десктопе ---
+.menu__big-btn,
+.header__top-btn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
 
 .download-page {
     background-position: top center;
@@ -133,7 +262,7 @@ section[id] {
 .download-page__desc {
     font-size: 28px;
     font-family: 'Raleway-Regular';
-    color: #9dc7d1;;
+    color: #f5e193;
     max-width: 450px;
     line-height: 53px;
     margin-bottom: 45px;
