@@ -1,270 +1,4 @@
 // start featured
-// @media (max-width: 1190px) {
-//     .featured-page__inner {
-//         flex-direction: column;
-
-//         .tab_content {
-//             order: -1;
-//         }
-//     }
-
-//     .featured-page__inner .tabs {
-//         border-right: none;
-//         width: 650px;
-//         text-align-last: left;
-//         padding-left: 135px;
-//     }
-
-//     .featured-page__inner .tabs .tab.active {
-//         border-right: none;
-//         border-bottom: 2px solid #5dca88;
-//     }
-
-//     .featured-page__inner .tabs .tab {
-//         padding: 28px 100px;
-//     }
-
-//     .tabs__line-main {
-//         display: none;
-//     }
-// }
-
-// @media (max-width: 865px) {
-//     .featured-page__title {
-//         font-size: 25px;
-//         padding-left: 50px;
-//         text-align: left;
-//     }
-
-//     .featured-page__desc {
-//         width: 550px;
-//         margin-left: 50px;
-//         text-align: left;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__images {
-//         width: 550px;
-//         margin-left: 50px;
-//         text-align: center;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__text {
-//         width: 550px;
-
-//     }
-
-//     .featured-page__inner .tab_content {
-//         padding-left: 50px;
-//     }
-
-//     .featured-page__inner .tabs {
-//         width: 550px;
-//         padding-left: 50px;
-//     }
-// }
-
-// @media (max-width: 640px) {
-//     .featured-page__desc {
-//         width: 400px;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__images {
-//         width: 400px;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__text {
-//         width: 400px;
-//     }
-
-//     .featured-page__inner .tabs {
-//         width: 400px;
-//     }
-
-//     .featured-page__inner .tabs .tab {
-//         padding: 28px 70px;
-//     }
-
-//     .featured-page__inner .tabs {
-
-//         .icon-briefcase::before,
-//         .icon-umbrella::before,
-//         .icon-leaf::before,
-//         .icon-mobile-phone::before {
-//             font-size: 35px;
-//         }
-//     }
-
-//     .featured-page__inner .tabs span.active::before {
-//         font-size: 35px;
-//     }
-
-//     .featured-page__inner .tab_content .icon-umbrella,
-//     .featured-page__inner .tab_content .icon-briefcase,
-//     .featured-page__inner .tab_content .icon-leaf,
-//     .featured-page__inner .tab_content .icon-mobile-phone {
-//         font-size: 100px;
-//     }
-//     .featured-page__inner .tab_content .icon-umbrella, 
-//     .featured-page__inner .tab_content .icon-briefcase, 
-//     .featured-page__inner .tab_content .icon-leaf, 
-//     .featured-page__inner .tab_content .icon-mobile-phone {
-//         margin-bottom: 40px;
-//     }
-//     .tab-item__text {
-//     font-size: 14px;
-//     line-height: 20px;
-//     }
-
-// }
-
-// @media (max-width: 490px) {
-//     .featured-page__desc {
-//         width: 380px;
-//         margin-left: 15px;
-//     }
-
-//     .featured-page__title {
-//         padding-left: 0;
-//         margin-left: 15px;
-//         font-size: 20px;
-
-//     }
-//     .featured-page__desc {
-//         margin-top: -20px;
-//         font-size: 14px;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__images {
-//         width: 380px;
-//         margin-left: 15px;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__text {
-//         width: 380px;
-//     }
-
-//     .featured-page__inner .tab_content {
-//         padding-left: 15px;
-//     }
-
-//     .featured-page__inner .tabs {
-//         width: 380px;
-//         padding-left: 15px;
-//     }
-//     .featured-page {
-//         padding: 43px 0;
-//     }
-// }
-
-// @media (max-width: 435px) {
-//     .featured-page__desc {
-//         width: 280px;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__images {
-//         width: 280px;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__text {
-//         width: 280px;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__title {
-//         font-size: 20px;
-//         width: 280px;
-//     }
-
-//     .featured-page__inner .tabs {
-//         width: 280px;
-//         padding-left: 15px;
-//     }
-
-//     .featured-page__inner .tabs .tab {
-//         padding: 28px 50px;
-//     }
-
-//     .featured-page__inner .tabs .tab__name {
-//         font-size: 18px;
-//     }
-
-//     .featured-page__inner .tabs {
-
-//         .icon-briefcase::before,
-//         .icon-umbrella::before,
-//         .icon-leaf::before,
-//         .icon-mobile-phone::before {
-//             font-size: 30px;
-//         }
-//     }
-
-//     .featured-page__inner .tabs span.active::before {
-//         font-size: 30px;
-//     }
-// }
-
-// @media (max-width: 330px) {
-//     .featured-page__desc {
-//         width: 250px;
-//     }
-
-//     .featured-page__inner .tab_content .tab-item__text {
-//         width: 250px;
-//     }
-
-//     .featured-page__inner .tabs {
-//         width: 250px;
-//         padding-left: 15px;
-//     }
-
-//     .featured-page__inner .tabs .tab__name {
-//         font-size: 16px;
-//     }
-// }
-
-// @media (max-width: 900px) {
-//     .service-detail {
-//         grid-template-columns: 1fr; // стопкой
-//         gap: 30px;
-
-//         &__gallery {
-//             height: 400px;
-//         }
-//     }
-// }
-
-// @media (max-width: 540px){
-// .featured-page__inner {
-//     display: block;
-// }
-
-// }
-
-
-
-// @media (max-width: 500px) {
-//     .service-detail {
-//         &__title {
-//             font-size: 24px;
-//         }
-
-//         &__meta {
-//             font-size: 18px;
-//             gap: 18px;
-//         }
-
-//         &__gallery {
-//             grid-template-columns: repeat(2, 1fr);
-//             grid-template-rows: repeat(2, 1fr);
-//             height: auto;
-//             aspect-ratio: 1 / 1; // квадратная сетка 2×2 на мобильном
-//         }
-
-//         &__img--main {
-//             grid-row: auto; // убираем span — все фото равны
-//         }
-//     }
-// }
-
 @media (max-width: 900px) {
     .featured-page__inner {
         flex-direction: column;
@@ -311,9 +45,49 @@
         padding-left: 0;
     }
 }
+@media (max-width: 820px){
+        .service-card {
+        width: 700px;
+    }
+        .featured-page__inner .tabs {
+        width: 700px;
+    }
+       .featured-page__inner .tab_content {
+        padding-left: 0;
+    } 
+    
+    .tab-item__grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px){
+   .featured-page__inner .tab_content {
+        padding-left: 0;
+    } 
+      .service-card {
+        width: 680px;
+    }
+}
+@media (max-width: 750px){
+    .service-card {
+        width: 500px;
+    }
+    .featured-page__inner .tabs {
+        width: 500px;
+    }
+    .featured-page__inner .tab_content {
+        padding-left: 0;
+    }
+}
+@media (max-width: 650px){
+    .service-card {
+        width: 400px;
+    }
+   .featured-page__inner .tabs {
+        width: 400px;
+    }
+}
 
-// --- Мобильный ≤540px: табы в колонку ---
-// ============================================================
 @media (max-width: 540px) {
     .tabs {
         width: 100%;
@@ -346,9 +120,22 @@
         }
     }
 }
-
-
-
+@media (max-width: 440px){
+    .service-card {
+        width: 360px;
+    }
+   .featured-page__inner .tabs {
+        width: 360px;
+    }
+}
+@media (max-width: 420px){
+    .service-card {
+        width: 300px;
+    }
+   .featured-page__inner .tabs {
+        width: 300px;
+    }
+}
 
 // end featured
 
@@ -371,7 +158,7 @@
     }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1050px) {
     .gallery-page__images {
         img {
             margin: 0 auto;
@@ -394,6 +181,16 @@
         width: 565px;
     }
 }
+
+
+@media (max-width: 700px) {
+   .gallery-page__images {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+
 @media (max-width: 760px) {
     .gallery-page__images {
         img {
@@ -421,13 +218,6 @@
 }
 
 @media (max-width: 500px) {
-    .gallery-page__images {
-        img {
-            width: 200px;
-            height: 420px;
-        }
-    }
-
     .gallery-page__items {
         display: block;
     }
@@ -440,6 +230,12 @@
 @media (max-width: 390px) {
     .gallery-page__title {
         font-size: 20px;
+    }
+        .gallery-page__images {
+        img {
+            width: 200px;
+            height: 420px;
+        }
     }
 
     .gallery-page__desc {

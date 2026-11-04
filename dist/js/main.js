@@ -20,9 +20,13 @@ $(function () {
             nextArrow: '<button type="button" class="slick-btn slick-next"><img src="img/arrow-next.png" alt=""></button>',
             autoplay: true,
             responsive: [
-                {
-                  breakpoint: 768, // например, для планшетов
+              {
+                  breakpoint: 1050, // например, для планшетов
                   settings: { slidesToShow: 2, slidesToScroll: 1, infinite: true, arrows: false }
+                },
+                {
+                  breakpoint: 700, // например, для планшетов
+                  settings: { slidesToShow: 1, slidesToScroll: 1, infinite: true, arrows: false }
                 },
                 {
                   breakpoint: 500, // для мобильных
