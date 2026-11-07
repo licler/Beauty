@@ -247,6 +247,22 @@
         width: 280px;
     }
 }
+@media (max-width: 375px) {
+    .gallery-page__images {
+        img {
+            width: 246px;
+            height: 420px;
+        }
+}  
+}
+@media (max-width: 320px) {
+    .gallery-page__images {
+        img {
+            width: 205px;
+            height: 360px;
+        }
+}  
+}
 
 // end gallery-page
 

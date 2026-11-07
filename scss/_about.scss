@@ -1,0 +1,61 @@
+// start about-page
+.about-page {
+    background-color: #f2f9fe;
+    padding: 70px 0;
+    position: relative;
+}
+
+.about-page__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-page__inner {
+    max-width: 485px;
+    width: 100%;
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.about-page__title {
+    color: $lightgreen;
+    font-size: 36px;
+    font-family: 'Raleway-Bold';
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.about-page__title::after {
+    content: "";
+    width: 104px;
+    height: 2px;
+    background-color: $brown;
+    position: absolute;
+    display: block;
+    bottom: -16px;
+    left: 0;
+}
+
+.about-page__desc {
+    margin-top: 40px;
+    font-size: 36px;
+    color: $color-grey;
+    margin-bottom: 40px;
+}
+
+.about-page__text {
+    line-height: 24px;
+    color: $color-grey;
+    margin-bottom: 50px;
+}
+.anim-show {
+    transform: translate(0, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+.anim-show.active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+// end about-page

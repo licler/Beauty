@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+body {
+    font-size: 16px;
+    font-family: 'Raleway-Regular';
+    font-weight: 400;
+    color: $grey;
+    
+}
+img {
+	max-width: 100%;
+	display: block;
+}

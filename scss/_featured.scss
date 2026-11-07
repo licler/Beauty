@@ -1,0 +1,266 @@
+// start featured
+.featured-page {
+    padding: 110px 0 200px 0;
+    background-color: $white;
+}
+
+.featured-page__title,
+.gallery-page__title {
+    color: $brown;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Raleway-Bold';
+    margin-bottom: 100px;
+}
+
+.featured-page__desc,
+.gallery-page__desc {
+    color: $lightgrey;
+    text-align: center;
+    width: 760px;
+    margin: 0 auto;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.featured-page__inner {
+    display: flex;
+
+    .tabs {
+        width: 360px;
+        display: block;
+        min-height: 70px;
+        position: relative;
+
+        span.active::before {
+            font-size: 48px;
+            color: $lightgreen;
+            position: absolute;
+            top: 22px;
+            left: 10px;
+        }
+
+        span {
+            position: relative;
+        }
+
+        .tab {
+            width: 100%;
+            display: block;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            color: #9fa9a9;
+            margin: 30px 0;
+        }
+
+        .tab__name {
+            font-family: 'Raleway-Regular';
+            font-size: 20px;
+        }
+
+        .tab__name.active {
+            color: #5dca88;
+        }
+
+        .tab.active {
+            border-right: 10px solid $lightgreen;
+            color: #5dca88;
+            font-weight: 700;
+            display: block;
+        }
+    }
+
+
+    .tab_content {
+        width: 800px;
+        padding-left: 35px;
+
+        .tab-item {
+            display: none;
+        }
+
+        .tab-item:first-child {
+            display: block;
+        }
+
+        .tab-item__images {
+            margin: 0 auto;
+            width: 400px;
+            text-align: left;
+        }
+
+        .tab-item__title {
+            font-size: 24px;
+            font-family: 'Raleway-Bold';
+            color: $brown;
+            margin-bottom: 30px;
+        }
+
+        .tab-item__text {
+            width: 685px;
+            color: $lightgrey;
+            line-height: 40px;
+            font-size: 18px;
+            color: #000;
+
+        }
+    }
+}
+
+.tab-item__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background-color: #f9fafa;
+    border-radius: 12px;
+    padding: 25px;
+    border-left: 4px solid $lightgreen;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 15px;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        font-family: 'Raleway-Bold';
+        font-size: 20px;
+        color: $brown;
+        margin: 0;
+    }
+
+    &__price {
+        font-family: 'Raleway-Bold';
+        font-size: 20px;
+        color: $lightgreen;
+        white-space: nowrap;
+    }
+
+    &__meta {
+        font-size: 14px;
+        color: $lightgrey;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+    }
+}
+
+//таб с арома массаж 2
+.service-detail {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; // текст чуть уже, фото чуть шире
+    gap: 40px;
+    align-items: start;
+    margin-top: 10px;
+
+    // --- Левая часть: текст ---
+    &__info {
+        padding-top: 10px;
+    }
+
+    &__title {
+        font-family: 'Raleway-Bold';
+        font-size: 28px;
+        color: $brown;
+        margin: 0 0 15px;
+        position: relative;
+        padding-bottom: 15px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background-color: $lightgreen;
+            border-radius: 2px;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        margin-bottom: 25px;
+        font-family: 'Raleway-Bold';
+        font-size: 20px;
+    }
+
+    &__time {
+        color: $lightgrey;
+        position: relative;
+        padding-left: 28px;
+
+        &::before {
+            content: '⏱'; // или иконка из вашего шрифта, например icon-clock
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+        }
+    }
+
+    &__price {
+        color: $lightgreen;
+    }
+
+    &__text {
+        font-size: 17px;
+        line-height: 1.7;
+        color: #333;
+        margin: 0;
+    }
+
+    // --- Правая часть: мозаика фото ---
+    &__gallery {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 12px;
+        height: 460px; // фиксируем высоту мозаики
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+        &:hover {
+            transform: scale(1.04);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    // Главное фото занимает левую колонку на обе строки
+    &__img--main {
+        grid-row: span 2;
+    }
+}
+
+
+
+// end featured
