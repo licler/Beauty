@@ -4,11 +4,25 @@
     padding-bottom: 10px 0;
 }
 
+// .gallery-page__images {
+    
+//     width: 300px;
+// }
+.gallery-page__item {
+    padding: 0 10px;   // отступ между слайдами
+}
 .gallery-page__images {
     margin-bottom: 40px;
-    width: 300px;
+    width: 100%;
+    img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;   // единые пропорции для всех
+        object-fit: cover;     // без искажений
+        display: block;
+        border-radius: 8px;
+    }
 }
-
 .gallery-page__text {
     font-size: 14px;
     line-height: 24px;
@@ -31,12 +45,12 @@
     .slick-prev {
         left: -90px;
         z-index: 5;
-        top: 285px;
+        top: 230px;
     }
     .slick-next {
-        right: 4px;
+        right: -90px;
         z-index: 5;
-        top: 285px;
+        top: 230px;
     }
     .slick-btn slick-next .slick-arrow:hover{
        color: red;

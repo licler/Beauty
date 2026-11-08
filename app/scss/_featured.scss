@@ -1,6 +1,6 @@
 // start featured
 .featured-page {
-    padding: 110px 0 200px 0;
+    padding: 110px 0 155px 0;
     background-color: $white;
 }
 
@@ -150,8 +150,20 @@
 
     &__meta {
         font-size: 14px;
-        color: $lightgrey;
+        font-family: "Raleway-Bold";
         margin-bottom: 15px;
+        position: relative;
+        padding-left: 28px;
+        color: #afb8b8;
+    }
+
+    &__meta::before {
+        content: "⏱";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 18px;
     }
 
     &__text {
