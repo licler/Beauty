@@ -249,6 +249,7 @@
         grid-template-rows: 1fr 1fr;
         gap: 12px;
         height: 460px; // фиксируем высоту мозаики
+        overflow: hidden;
     }
 
     &__img {
@@ -257,6 +258,7 @@
         object-fit: cover;
         border-radius: 10px;
         display: block;
+        min-width: 0;
         transition: transform 0.4s ease, box-shadow 0.4s ease;
 
         &:hover {
