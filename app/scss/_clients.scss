@@ -1,37 +1,51 @@
 // start clients-page
 .clients-page__wrapper {
-    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    margin: 0 10px; // ← отступ между слайдами
+    box-sizing: border-box; // ← важно!
     text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+
     .clients-page__title {
         font-size: 36px;
         color: $brown;
         font-family: 'Raleway-Bold';
         margin-bottom: 25px;
     }
+
     .clients-page__desc {
-        font-size: 20px;
-        line-height: 24px;
-        color: $color-grey;
-        font-family: 'Raleway-Italic';
-        margin-bottom: 15px;
+        font-family: 'Raleway-Regular';
+        font-size: 18px;
+        line-height: 1.6;
+        color: $brown;
+        margin: 0 0 20px;
+        width: 100%;
+        max-width: 100%; // ← не вылезает
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
+
     .clients-page__author {
         color: $lightgreen;
         font-size: 24px;
         line-height: 24px;
     }
 }
+
 .clients-page__slider {
     .slick-dots {
         text-align: center;
         margin-top: 25px;
     }
-    
+
     .slick-dots li {
         display: inline-block;
         margin-right: 9px;
         margin-left: 9px;
     }
+
     .slick-dots li button {
         border-radius: 50%;
         width: 16px;
@@ -42,15 +56,34 @@
         cursor: pointer;
         font-size: 0;
     }
+
     .slick-dots li.slick-active button {
         background-color: $lightgreen;
     }
-           
+
+    .clients-page__slider {
+
+        // Компенсируем отступы слайдов
+        .slick-list {
+            margin: 0 -10px; // ← компенсируем margin слайдов
+            overflow: hidden;
+        }
+
+        .slick-slide {
+            box-sizing: border-box; // ← padding не увеличивает ширину
+            overflow: hidden;
+
+            >div {
+                height: 100%;
+            }
+        }
+    }
+
 }
 
 .clients-page {
     padding: 80px 0;
-    background-color: #f9fafa;   
+    background-color: #f9fafa;
 }
 
 // --- Блок с кнопкой «Оставить отзыв» ---

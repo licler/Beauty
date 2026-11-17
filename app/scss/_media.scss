@@ -430,12 +430,25 @@
     }
 
     @media (max-width: 550px) {
+        .clients-page__slider {
+            .slick-list {
+                margin: 0 -5px; // ← меньше компенсация
+            }
+        }
+
         .clients-page__wrapper {
+            padding: 25px 20px;
+            margin: 0 -1px;
+
             .clients-page__desc {
                 font-size: 16px;
+                line-height: 1.6;
                 width: 100%;
+                max-width: 100%;
+                margin: 0 auto 15px;
                 text-align: center;
-                margin: 0 auto 20px;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
             }
 
             .clients-page__title {

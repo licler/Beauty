@@ -947,8 +947,15 @@ section[id] {
 }
 
 .clients-page__wrapper {
-  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  margin: 0 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
+  -webkit-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
 .clients-page__wrapper .clients-page__title {
@@ -959,11 +966,15 @@ section[id] {
 }
 
 .clients-page__wrapper .clients-page__desc {
-  font-size: 20px;
-  line-height: 24px;
-  color: #8c9494;
-  font-family: "Raleway-Italic";
-  margin-bottom: 15px;
+  font-family: "Raleway-Regular";
+  font-size: 18px;
+  line-height: 1.6;
+  color: #636c6c;
+  margin: 0 0 20px;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .clients-page__wrapper .clients-page__author {
@@ -996,6 +1007,21 @@ section[id] {
 
 .clients-page__slider .slick-dots li.slick-active button {
   background-color: #5dca88;
+}
+
+.clients-page__slider .clients-page__slider .slick-list {
+  margin: 0 -10px;
+  overflow: hidden;
+}
+
+.clients-page__slider .clients-page__slider .slick-slide {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.clients-page__slider .clients-page__slider .slick-slide > div {
+  height: 100%;
 }
 
 .clients-page {
@@ -1904,11 +1930,24 @@ section[id] {
 }
 
 @media (max-width: 900px) and (max-width: 550px) {
+  .clients-page__slider .slick-list {
+    margin: 0 -5px;
+  }
+
+  .clients-page__wrapper {
+    padding: 25px 20px;
+    margin: 0 -1px;
+  }
+
   .clients-page__wrapper .clients-page__desc {
     font-size: 16px;
+    line-height: 1.6;
     width: 100%;
+    max-width: 100%;
+    margin: 0 auto 15px;
     text-align: center;
-    margin: 0 auto 20px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .clients-page__wrapper .clients-page__title {
