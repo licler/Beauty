@@ -108,6 +108,10 @@
             width: 80%;
             height: auto; // ← чуть шире, чем квадрат
         }
+
+        .service-card {
+            width: 80%;
+        }
     }
 
     @media (max-width: 768px) {
@@ -135,6 +139,10 @@
         .service-detail__title {
             font-size: 24px;
         }
+
+        .service-card {
+            width: 70%;
+        }
     }
 
     @media (max-width: 630px) {
@@ -146,6 +154,14 @@
             width: 50%;
         }
     }
+
+    @media (max-width: 590px) {
+        .service-card {
+            width: 60%;
+        }
+
+    }
+
 
     @media (max-width: 540px) {
         .tabs {
@@ -220,6 +236,8 @@
             &__text {
                 font-size: 15px;
             }
+
+            width: 50%;
         }
     }
 
@@ -230,13 +248,14 @@
     }
 
     @media (max-width: 440px) {
-        .service-card {
-            width: 360px;
-        }
 
         .service-detail__img {
             width: 40%;
             height: auto; // ← чуть шире, чем квадрат
+        }
+
+        .service-card {
+            width: 45%;
         }
     }
 
@@ -413,8 +432,8 @@
     @media (max-width: 550px) {
         .clients-page__wrapper {
             .clients-page__desc {
-                font-size: 20px;
-                width: 350px;
+                font-size: 16px;
+                width: 100%;
                 text-align: center;
                 margin: 0 auto 20px;
             }
@@ -424,9 +443,10 @@
             }
 
             .clients-page__author {
-                font-size: 20px;
+                font-size: 16px;
             }
         }
+
         .clients-page {
             padding: 50px 0;
         }
@@ -454,7 +474,7 @@
     @media (max-width: 400px) {
         .clients-page__wrapper {
             .clients-page__desc {
-                width: 280px;
+                // width: 280px;
                 line-height: 24px;
             }
         }

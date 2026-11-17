@@ -1339,6 +1339,10 @@ section[id] {
     width: 80%;
     height: auto;
   }
+
+  .service-card {
+    width: 80%;
+  }
 }
 
 @media (max-width: 900px) and (max-width: 768px) {
@@ -1371,6 +1375,10 @@ section[id] {
   .service-detail__title {
     font-size: 24px;
   }
+
+  .service-card {
+    width: 70%;
+  }
 }
 
 @media (max-width: 900px) and (max-width: 630px) {
@@ -1380,6 +1388,12 @@ section[id] {
 
   .service-detail__title {
     width: 50%;
+  }
+}
+
+@media (max-width: 900px) and (max-width: 590px) {
+  .service-card {
+    width: 60%;
   }
 }
 
@@ -1447,6 +1461,7 @@ section[id] {
 
   .service-card {
     padding: 20px;
+    width: 50%;
   }
 
   .service-card__title {
@@ -1527,13 +1542,13 @@ section[id] {
 }
 
 @media (max-width: 900px) and (max-width: 440px) {
-  .service-card {
-    width: 360px;
-  }
-
   .service-detail__img {
     width: 40%;
     height: auto;
+  }
+
+  .service-card {
+    width: 45%;
   }
 }
 
@@ -1553,7 +1568,6 @@ section[id] {
   }
 
   .clients-page__wrapper .clients-page__desc {
-    width: 280px;
     line-height: 24px;
   }
 }
@@ -1891,8 +1905,8 @@ section[id] {
 
 @media (max-width: 900px) and (max-width: 550px) {
   .clients-page__wrapper .clients-page__desc {
-    font-size: 20px;
-    width: 350px;
+    font-size: 16px;
+    width: 100%;
     text-align: center;
     margin: 0 auto 20px;
   }
@@ -1902,7 +1916,7 @@ section[id] {
   }
 
   .clients-page__wrapper .clients-page__author {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .clients-page {
