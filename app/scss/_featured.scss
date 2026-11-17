@@ -27,7 +27,6 @@
     display: flex;
 
     .tabs {
-        width: 360px;
         display: block;
         min-height: 70px;
         position: relative;
@@ -189,7 +188,7 @@
 
     &__title {
         font-family: 'Raleway-Bold';
-        font-size: 28px;
+        font-size: 20px;
         color: $brown;
         margin: 0 0 15px;
         position: relative;
